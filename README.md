@@ -17,7 +17,7 @@ Both projects use Net Core 2.2 Framework.
 
 ## Game execution
 
-By executing the Console application from Visual Studio, you will the log of the players changing position in the board.
+By executing the Console application from Visual Studio, you will see the log of the players changing position in the board.
 
 This implementation has two players, computer vs computer, that change position randomly, so any player can win.
 
