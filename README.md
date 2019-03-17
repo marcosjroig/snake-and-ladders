@@ -54,10 +54,10 @@ Following the objects identified and their responsibilities that you will see re
 - __Player__: keeps track of his position and moves over squares of the board  
 - __Die__: generate a random number from 1 to 6.
 - __Square__: 
-                - knows its position in the board
-                - knows all the players that are in that position 
-                - knows how to assign a player to that position.
-                - knows how to remove a player from that position
+- knows its position in the board
+- knows all the players that are in that position 
+- knows how to assign a player to that position.
+- knows how to remove a player from that position
 - __Snake__: is a special type of square that moves back a player when it lands in this square
 - __Ladder__: is a special type of square that moves up a player when it lands in this square 
 - __LastPosition__: is another type of square, that is the position number 100 for this implementation, this set a winner when a player lands in this position.
