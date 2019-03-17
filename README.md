@@ -53,7 +53,8 @@ Following the objects identified and their responsibilities that you will see re
      
 - __Player__: keeps track of his position and moves over squares of the board  
 - __Die__: generate a random number from 1 to 6.
-- __Square__: - knows its position in the board
+- __Square__: 
+                - knows its position in the board
                 - knows all the players that are in that position 
                 - knows how to assign a player to that position.
                 - knows how to remove a player from that position
