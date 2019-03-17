@@ -51,15 +51,15 @@ The most important decision was to approach the problem with a "Responsibility-D
 
 Following the objects identified and their responsibilities that you will be reflected in the code:
      
-- Player: keeps track of his position and moves over squares of the board  
-- Die: generate a random number from 1 to 6.
-- Square: - knows its position in the board
+- __Player__: keeps track of his position and moves over squares of the board  
+- __Die__: generate a random number from 1 to 6.
+- __Square__: - knows its position in the board
                 - knows all the players that are in that position 
                 - knows how to assign a player to that position.
                 - knows how to remove a player from that position
-- Snake: is a special type of square that moves back a player when it lands in this square
-- Ladder: is a special type of square that moves up a player when it lands in this square 
-- Board: it contains the list of squares, snakes, and ladders. This became an important object in my implementation as it holds a collection of the square but also handle the events. I didn't want a single Square, Snake or Ladder to assign the player to another Square: it means having a recursive dependency with a board that contains the square, but every single square should know also the board in order to assign the player to another board. Example: if the player lands in position 50 and it is a snake that connects the square 50 and 25, the snake needs to have a dependency with the board to be able to assign the player to the position 25. Instead of that, the snakes and ladders publish an event that the board subscribes to it, so it passes the player and the position that need to be moved and the board does that. 
-- Game: this object do the same as when you play a game on the computer or cellphone, the first screen will ask you about the options: your name, if you want to play against to computer or other users online, level od difficult, etc. My implementation of this function creates a board of 100 squares and two players. In addition, the board is exactly the same as in the picture above.
-- Play: the play is the object than a player press to start the game and then, behind the scenes, there is a process that coordinate the game and keep track of the game state.
+- __Snake__: is a special type of square that moves back a player when it lands in this square
+- __Ladder__: is a special type of square that moves up a player when it lands in this square 
+- __Board__: it contains the list of squares, snakes, and ladders. This became an important object in my implementation as it holds a collection of the square but also handle the events. I didn't want a single Square, Snake or Ladder to assign the player to another Square: it means having a recursive dependency with a board that contains the square, but every single square should know also the board in order to assign the player to another board. Example: if the player lands in position 50 and it is a snake that connects the square 50 and 25, the snake needs to have a dependency with the board to be able to assign the player to the position 25. Instead of that, the snakes and ladders publish an event that the board subscribes to it, so it passes the player and the position that need to be moved and the board does that. 
+- __Game__: this object do the same as when you play a game on the computer or cellphone, the first screen will ask you about the options: your name, if you want to play against to computer or other users online, level od difficult, etc. My implementation of this function creates a board of 100 squares and two players. In addition, the board is exactly the same as in the picture above.
+- __Play__: the play is the object than a player press to start the game and then, behind the scenes, there is a process that coordinate the game and keep track of the game state.
 
