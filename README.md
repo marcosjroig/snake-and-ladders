@@ -70,5 +70,13 @@ Other objects
 
 __Note__: I didn't add any IoC container for the Dependency injection, even if the code is testable and the interfaces are ready. I normally use the IoC container of the ASP.NET Core, registering the mappings between classes and interfaces in the start class.
 
+### How do you envision your solution evolving in the future?
 
+The code is prepared to be extended and used in any other places like a graphic version of this game.
+
+- Need to change the seed classes to implement a proper user configuration screen, given the player all the options for configuring the game.
+- need to create a class that implements the interface IPlayMessage to show some animations when the user change position, sounds, etc.
+- Need to create a class that implements IPlay interface or inherits from Play, and create a new implementation of the method "MovePlayer" in order that the game waits until each player rolls a die.
+
+All these changes are improvements and extensions of the existing code, not need to do big changes to create a graphic version of this implementation.
 
