@@ -29,9 +29,9 @@ It is possible that two players land in the same position, when that happens, fo
 
 I didn't implement the option to clean the screen and play again. The main idea I had when starting doing it was to focus more on the Object Oriented part of the game and make it simple.
 
-## Key desitions, design and code
+## Key decisions, design and code
 
 In this section I will respond to these questions:
 - How did you approach the problem?
-- How did you make key design decisions and what alternatives did you consider?
+-  How did you make key design decisions and what alternatives did you consider?
 - How do you envision your solution evolving in the future?
