@@ -68,7 +68,7 @@ Other objects
 - __PlayMessage__: I created this object with the idea of the create a separated section where to put the logic related with the player's interaction, so in the future when a player change position if can show a popup, move something in a graphic UI, etc. 
 - __Seed classes__: inside of the SeedData folder I placed a few clases used for the Game to create the objects. I will normally use this in the test project, but I wanted to implement a console application to see the game log.
 
-__Note__: I didn't add any IoC container for the Dependency injection, even if the code is testable and the interfaces are ready. I normally use the IoC container of the ASP.NET Core, registering the mappings between classes and interfaces in the start class.
+__Note__: I didn't add any IoC container for the Dependency injection, even if the code is testable and the interfaces are ready. I normally use the IoC container of the ASP.NET Core, registering the mappings between classes and interfaces in the start class. The Program class and seed classes have some classes instantiated instead of getting injected like I explained before I tried to keep the solution simple. 
 
 ### How do you envision your solution evolving in the future?
 
