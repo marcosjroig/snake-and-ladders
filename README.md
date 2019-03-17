@@ -49,7 +49,7 @@ In this section I will respond to these questions:
 
 The most important decision was to approach the problem with a "Responsibility-Driven Design":  Well-designed objects have clear responsibilities.
 
-Following the objects identified and their responsibilities that you will be reflected in the code:
+Following the objects identified and their responsibilities that you will see reflected in the code:
      
 - __Player__: keeps track of his position and moves over squares of the board  
 - __Die__: generate a random number from 1 to 6.
