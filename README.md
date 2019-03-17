@@ -64,3 +64,11 @@ Following the objects identified and their responsibilities that you will be ref
 - __Game__: this object do the same as when you play a game on the computer or cellphone, the first screen will ask you about the options: your name, if you want to play against to computer or other users online, level od difficult, etc. My implementation of this function creates a board of 100 squares and two players. In addition, the board is exactly the same as in the picture above. So you have a ladder that connect the square 4 and 16 and snake that connects 2 and 22.
 - __Play__: the play is the object than a player press to start the game and then, behind the scenes, there is a process that coordinate the game and keep track of the game state.
 
+Other objects
+- __PlayMessage__: I created this object with the idea of the create a separated section where to put the logic related with the player's interaction, so in the future when a player change position if can show a popup, move something in a graphic UI, etc. 
+- __Seed classes__: inside of the SeedData folder I placed a few clases used for the Game to create the objects. I will normally use this in the test project, but I wanted to implement a console application to see the game log.
+
+__Note__: I didn't add any IoC container for the Dependency injection, even if the code is testable and the interfaces are ready. I normally use the IoC container of the ASP.NET Core, registering the mappings between classes and interfaces in the start class.
+
+
+
