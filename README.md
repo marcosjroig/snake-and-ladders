@@ -33,5 +33,15 @@ I didn't implement the option to clean the screen and play again. The main idea 
 
 In this section I will respond to these questions:
 - How did you approach the problem?
--  How did you make key design decisions and what alternatives did you consider?
+- How did you make key design decisions and what alternatives did you consider?
 - How do you envision your solution evolving in the future?
+
+### How did you approach the problem?
+1) I didn't know this game, so I installed the game on my cellphone and started playing to understand the game.
+2) The first technical task I did was to identify all the objects of the game, known also as "Model domain objects".
+3) Then identify the model responsibilities, for every object identified in point 2, I tried to respond the following questions:
+   -- What actions is this object responsible for? 
+   -- What information does this object share?  
+4) Having a clear understanding of point 2 and 3, I created a class diagram, to design the interaction between objects.
+5) I started coding using TDD 
+
