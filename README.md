@@ -4,8 +4,8 @@ C# Console application made in .NET Core for the game: Snakes and Ladders
 ![](SnakesAndLadder.jpg)
 
 ## Requirements to run the code
-Visual Studio 2017 or VS Code
-.NET Core 2.2 framework
+- Visual Studio 2017 or VS Code
+- .NET Core 2.2 framework
 
 ## Solution structure
 
