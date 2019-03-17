@@ -28,3 +28,10 @@ In addition, if a player is in the square 98 (considering the last position 100)
 It is possible that two players land in the same position, when that happens, for my implementation there is no change, so I am not moving down any of the players. Other implements may do.
 
 I didn't implement the option to clean the screen and play again. The main idea I had when starting doing it was to focus more on the Object Oriented part of the game and make it simple.
+
+## Key desitions, design and code
+
+In this section I will respond to these questions:
+- How did you approach the problem?
+- How did you make key design decisions and what alternatives did you consider?
+- How do you envision your solution evolving in the future?
